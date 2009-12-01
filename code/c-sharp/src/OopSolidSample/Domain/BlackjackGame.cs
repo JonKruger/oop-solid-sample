@@ -16,16 +16,9 @@ namespace OopSolidSample.Domain
 
             foreach (Rank rank in Enum.GetValues(typeof(Rank)))
             {
-                if (rank != Rank.Joker)
+                foreach (Suit suit in Enum.GetValues(typeof (Suit)))
                 {
-                    foreach (Suit suit in Enum.GetValues(typeof(Suit)))
-                    {
-                        deck.Add(new Card { Rank = rank, Suit = suit });
-                    }
-                }
-                else
-                {
-                    deck.Add(new Card { Rank = rank });
+                    deck.Add(new Card {Rank = rank, Suit = suit});
                 }
             }
 

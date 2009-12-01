@@ -14,7 +14,6 @@ namespace OopSolidSample.Domain
         Jack,
         Queen,
         King,
-        Ace,
-        Joker
+        Ace
     }
 }

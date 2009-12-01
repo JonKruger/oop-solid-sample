@@ -16,18 +16,11 @@ namespace OopSolidSample.Domain
         {
             var deck = new List<Card>();
 
-            foreach (Rank rank in Enum.GetValues(typeof (Rank)))
+            foreach (Rank rank in Enum.GetValues(typeof(Rank)))
             {
-                if (rank != Rank.Joker)
+                foreach (Suit suit in Enum.GetValues(typeof (Suit)))
                 {
-                    foreach (Suit suit in Enum.GetValues(typeof (Suit)))
-                    {
-                        deck.Add(new Card {Rank = rank, Suit = suit});
-                    }
-                }
-                else
-                {
-                    deck.Add(new Card {Rank = rank});
+                    deck.Add(new Card {Rank = rank, Suit = suit});
                 }
             }
 
@@ -80,9 +73,6 @@ namespace OopSolidSample.Domain
                     case Rank.Ace:
                         score += 15;
                         break;
-                    case Rank.Joker:
-                        score += 20;
-                        break;
                 }
 
                 if (card.Suit == Suit.Spades)
@@ -96,20 +86,12 @@ namespace OopSolidSample.Domain
 
             foreach (var cardsByRank in numberOfCardsByRankDictionary)
             {
-                if (cardsByRank.Key != Rank.Joker)
-                {
-                    if (cardsByRank.Value == 2)
-                        score += 50;
-                    else if (cardsByRank.Value == 3)
-                        score += 150;
-                    else if (cardsByRank.Value == 4)
-                        score += 300;
-                }
-                else
-                {
-                    if (cardsByRank.Value == 2)
-                        score += 200;
-                }
+                if (cardsByRank.Value == 2)
+                    score += 50;
+                else if (cardsByRank.Value == 3)
+                    score += 150;
+                else if (cardsByRank.Value == 4)
+                    score += 300;
             }
 
             return new DrawResult {Score = score, Cards = hand};
