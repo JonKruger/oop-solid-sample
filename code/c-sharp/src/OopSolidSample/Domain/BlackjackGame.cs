@@ -32,7 +32,6 @@ namespace OopSolidSample.Domain
             }
 
             var score = 0;
-            var numberOfCardsByRankDictionary = new Dictionary<Rank, int>();
 
             foreach (var card in hand)
             {

@@ -1,0 +1,40 @@
+"Draw Five"
+-------------
+Draw Five is a card game where you draw five cards and get points based on the cards that you draw.  You can also view the high scores and save high scores to a database.
+
+When drawing cards
+- 5 cards are drawn from a standard 52-card deck (keep in mind that the same card cannot be drawn twice)
+- should show the user what cards they drew
+
+When scoring the draw
+- face cards = 10
+- aces = 15
+- numbers = number value
+
+in addition to base score:
+- each pair +50
+- three of a kind +150
+- four of a kind +300
+- each spade +1
+
+When showing the high scores
+- should show the top 5 scores (name and score)
+
+When saving a high score
+- should save the name and the score
+
+===========================================================================
+
+"Blackjack"
+-----------
+In this simple version of blackjack, you just draw two cards and calculate the score for the two cards (no drawing of extra cards).  High scores are not saved in Blackjack.
+
+When drawing cards
+- 5 cards are drawn from a standard 52-card deck (keep in mind that the same card cannot be drawn twice)
+- should show the user what cards they drew
+
+When scoring the draw
+- face cards = 10
+- aces = 11
+- numbers = number value
+
