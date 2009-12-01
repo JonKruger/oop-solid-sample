@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using OopSolidSample.Config;
 
 namespace OopSolidSample
 {
@@ -26,6 +27,9 @@ namespace OopSolidSample
 
         protected void Application_Start()
         {
+            var config = new StandardStructureMapConfiguration();
+            config.Configure();
+
             RegisterRoutes(RouteTable.Routes);
         }
     }
