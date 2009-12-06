@@ -79,4 +79,16 @@ class DrawFiveGame
     result.cards = hand
     return result
   end
+
+  def get_high_scores
+    return HighScore.find(:all, :limit => 5, :order => "score desc")
+  end
+
+  def save_score(name, score)
+    high_score = HighScore.new
+    high_score.name = name
+    high_score.score = score
+    high_score.save
+  end
+  
 end
