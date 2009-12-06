@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <%= stylesheet_link_tag 'site' %>
+</head>
+
+<body>
+    <div class="page">
+
+        <div id="header">
+            <div id="title">
+                <h1>&nbsp;</h1>
+            </div>
+
+            <div id="logindisplay">
+                &nbsp;
+            </div>
+
+            <div id="menucontainer">
+
+                <ul id="menu">
+                  <li><a href="/home/index">Home</a></li>
+                  <li><a href="/drawfive/index">Play Draw Five</a></li>
+                  <li><a href="/drawfive/highscores">Draw Five High Scores</a></li>
+                  <li><a href="/blackjack/index">Play Blackjack</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="main">
+            <%= yield %>
+
+            <div id="footer">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

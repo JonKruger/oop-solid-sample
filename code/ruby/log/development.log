@@ -95,3 +95,50 @@ Migrating to CreateHighScores (20091206184229)
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("high_scores")[0m
   [4;36;1mHighScore Create (2.0ms)[0m   [0;1mINSERT INTO "high_scores" ("name", "score", "updated_at", "created_at") VALUES('Jon', 33, '2009-12-06 19:02:37', '2009-12-06 19:02:37')[0m
   [4;35;1mHighScore Load (2.0ms)[0m   [0mSELECT * FROM "high_scores" [0m
+
+
+Processing BlackjackController#index (for 127.0.0.1 at 2009-12-06 14:19:26) [GET]
+Rendering template within layouts/application
+Rendering blackjack/index
+Completed in 4071ms (View: 4068, DB: 0) | 200 OK [http://localhost/blackjack]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-06 14:19:30) [GET]
+
+ActionController::RoutingError (No route matches "/Content/Site.css" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing BlackjackController#index (for 127.0.0.1 at 2009-12-06 14:21:16) [GET]
+Rendering template within layouts/application
+Rendering blackjack/index
+Completed in 22ms (View: 19, DB: 0) | 200 OK [http://localhost/blackjack]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-06 14:21:25) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"UVstxG5SzP+yvGiEHIsxsbXPmSIXcP725Tni7p6T5lg="}
+
+ActionView::MissingTemplate (Missing template blackjack/draw.erb in view path app/views):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
