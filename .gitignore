@@ -3,4 +3,5 @@ obj
 .idea
 *.user
 ReSharper_*
+_ReSharper*
 *.suo
