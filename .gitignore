@@ -1,5 +1,6 @@
 bin
 obj
+.idea
 *.user
 ReSharper_*
 *.suo
