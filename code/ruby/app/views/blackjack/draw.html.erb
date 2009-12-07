@@ -1,0 +1,9 @@
+<% form_tag "/blackjack/draw" do -%>
+
+    <h2>Draw</h2>
+    You drew the following cards:<br />
+    <b><%= @cards %></b><br /><br />
+    Your score is: <b><%= @score %></b><br /><br />
+    <%= submit_tag "Draw Again" %>
+
+<% end %>

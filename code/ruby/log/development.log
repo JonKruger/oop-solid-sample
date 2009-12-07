@@ -142,3 +142,107 @@ ActionView::MissingTemplate (Missing template blackjack/draw.erb in view path ap
   c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (internal_server_error)
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-06 20:09:52) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"UVstxG5SzP+yvGiEHIsxsbXPmSIXcP725Tni7p6T5lg="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 66ms (View: 24, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-06 20:09:54) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"UVstxG5SzP+yvGiEHIsxsbXPmSIXcP725Tni7p6T5lg="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 44ms (View: 6, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-06 20:09:55) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"UVstxG5SzP+yvGiEHIsxsbXPmSIXcP725Tni7p6T5lg="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 124ms (View: 86, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-06 20:09:56) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"UVstxG5SzP+yvGiEHIsxsbXPmSIXcP725Tni7p6T5lg="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 39ms (View: 5, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-06 20:09:56) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"UVstxG5SzP+yvGiEHIsxsbXPmSIXcP725Tni7p6T5lg="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 44ms (View: 5, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-06 20:09:57) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"UVstxG5SzP+yvGiEHIsxsbXPmSIXcP725Tni7p6T5lg="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 44ms (View: 6, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-06 20:09:57) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"UVstxG5SzP+yvGiEHIsxsbXPmSIXcP725Tni7p6T5lg="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 46ms (View: 5, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-06 20:10:00) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"UVstxG5SzP+yvGiEHIsxsbXPmSIXcP725Tni7p6T5lg="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 45ms (View: 6, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-06 20:10:02) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"UVstxG5SzP+yvGiEHIsxsbXPmSIXcP725Tni7p6T5lg="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 42ms (View: 5, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-06 20:10:03) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"UVstxG5SzP+yvGiEHIsxsbXPmSIXcP725Tni7p6T5lg="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 47ms (View: 5, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-06 20:11:14) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"UVstxG5SzP+yvGiEHIsxsbXPmSIXcP725Tni7p6T5lg="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 39ms (View: 5, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-06 20:11:16) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"UVstxG5SzP+yvGiEHIsxsbXPmSIXcP725Tni7p6T5lg="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 44ms (View: 6, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-06 20:11:17) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"UVstxG5SzP+yvGiEHIsxsbXPmSIXcP725Tni7p6T5lg="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 52ms (View: 6, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-06 20:11:19) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"UVstxG5SzP+yvGiEHIsxsbXPmSIXcP725Tni7p6T5lg="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 120ms (View: 6, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#index (for 127.0.0.1 at 2009-12-06 20:11:22) [GET]
+Rendering template within layouts/application
+Rendering blackjack/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/blackjack/index]
