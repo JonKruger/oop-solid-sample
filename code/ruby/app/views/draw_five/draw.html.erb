@@ -1,0 +1,18 @@
+<% form_tag "/Draw_Five/draw" do -%>
+
+    <h2>Draw</h2>
+    You drew the following cards:<br />
+    <b><%= @cards %></b><br /><br />
+    Your score is: <b><%= @score %></b><br /><br />
+    <%= submit_tag "Draw Again" %>
+
+<% end %>
+<br />
+<br />
+<br />
+<% form_tag "/Draw_Five/savescore" do |f| -%>
+    Save this score:<br />
+    <%=h @score %>
+    Name: <%= f.text_field :name %>
+    <%= submit_tag "Save Score" %>
+<% end %>
