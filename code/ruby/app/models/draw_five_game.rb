@@ -44,8 +44,11 @@ class DrawFiveGame
         when Rank::NINE
           score += 9
         when Rank::TEN
+          score += 10
         when Rank::JACK
+          score += 10
         when Rank::QUEEN
+          score += 10
         when Rank::KING
           score += 10
         when Rank::ACE
