@@ -630,3 +630,595 @@ The error occurred while evaluating nil.text_field) on line #16 of app/views/dra
 Rendered rescues/_trace (85.0ms)
 Rendered rescues/_request_and_response (0.0ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2009-12-11 20:46:30) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 4512ms (View: 4507, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 20:46:43) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.text_field) on line #16 of app/views/draw_five/draw.html.erb:
+13: <% form_tag "/Draw_Five/savescore" do |f| -%>
+14:     Save this score:<br />
+15:     <%=h @score %>
+16:     Name: <%= f.text_field :name %>
+17:     <%= submit_tag "Save Score" %>
+18: <% end %>
+
+    app/views/draw_five/draw.html.erb:16
+    app/views/draw_five/draw.html.erb:13
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (98.0ms)
+Rendered rescues/_request_and_response (5.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BlackjackController#index (for 127.0.0.1 at 2009-12-11 20:46:50) [GET]
+Rendering template within layouts/application
+Rendering blackjack/index
+Completed in 115ms (View: 112, DB: 0) | 200 OK [http://localhost/Blackjack/index]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-11 20:46:51) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 155ms (View: 18, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-11 20:46:52) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 55ms (View: 7, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-11 20:46:53) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 44ms (View: 7, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2009-12-11 20:46:54) [GET]
+  [4;36;1mHighScore Load (79.0ms)[0m   [0;1mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+
+ActionView::MissingTemplate (Missing template draw_five/highscores.erb in view path app/views):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2009-12-11 20:46:58) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/Draw_Five/index]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 20:47:01) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.text_field) on line #16 of app/views/draw_five/draw.html.erb:
+13: <% form_tag "/Draw_Five/savescore" do |f| -%>
+14:     Save this score:<br />
+15:     <%=h @score %>
+16:     Name: <%= f.text_field :name %>
+17:     <%= submit_tag "Save Score" %>
+18: <% end %>
+
+    app/views/draw_five/draw.html.erb:16
+    app/views/draw_five/draw.html.erb:13
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (121.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 20:56:28) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.text_field_tag) on line #16 of app/views/draw_five/draw.html.erb:
+13: <% form_tag "/Draw_Five/savescore" do |f| -%>
+14:     Save this score:<br />
+15:     <%=h @score %>
+16:     Name: <%= f.text_field_tag :name %>
+17:     <%= submit_tag "Save Score" %>
+18: <% end %>
+
+    app/views/draw_five/draw.html.erb:16
+    app/views/draw_five/draw.html.erb:13
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (118.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 20:56:46) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.text_field_tag) on line #16 of app/views/draw_five/draw.html.erb:
+13: <% form_tag "/Draw_Five/savescore" do |f| -%>
+14:     Save this score:<br />
+15:     <%=h @score %>
+16:     Name: <%= f.text_field_tag "name" %>
+17:     <%= submit_tag "Save Score" %>
+18: <% end %>
+
+    app/views/draw_five/draw.html.erb:16
+    app/views/draw_five/draw.html.erb:13
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (196.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 20:56:49) [GET]
+Rendering template within layouts/application
+Rendering draw_five/draw
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.text_field_tag) on line #16 of app/views/draw_five/draw.html.erb:
+13: <% form_tag "/Draw_Five/savescore" do |f| -%>
+14:     Save this score:<br />
+15:     <%=h @score %>
+16:     Name: <%= f.text_field_tag "name" %>
+17:     <%= submit_tag "Save Score" %>
+18: <% end %>
+
+    app/views/draw_five/draw.html.erb:16
+    app/views/draw_five/draw.html.erb:13
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (91.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 20:57:25) [GET]
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 72ms (View: 23, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 20:57:40) [GET]
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 56ms (View: 18, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 20:57:43) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 58ms (View: 11, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 20:57:43) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 154ms (View: 8, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 20:57:44) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 57ms (View: 11, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 21:00:41) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 72ms (View: 21, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 21:00:45) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 48ms (View: 8, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 21:00:45) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 49ms (View: 9, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 21:00:46) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 59ms (View: 11, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 21:00:47) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 57ms (View: 11, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 21:00:49) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 46ms (View: 8, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 21:01:03) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 61ms (View: 12, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 21:01:19) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 45ms (View: 8, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 21:01:19) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 59ms (View: 9, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2009-12-11 21:01:22) [GET]
+  [4;35;1mHighScore Load (2.0ms)[0m   [0mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+
+ActionView::MissingTemplate (Missing template draw_five/highscores.erb in view path app/views):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DrawFiveController#savescore (for 127.0.0.1 at 2009-12-11 21:01:32) [POST]
+  Parameters: {"score"=>"", "name"=>"asdfsdfa", "commit"=>"Save Score", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Redirected to http://localhost:3000/draw_five
+Completed in 30ms (DB: 0) | 302 Found [http://localhost/Draw_Five/savescore]
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2009-12-11 21:01:32) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/draw_five]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-11 21:01:34) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 58ms (View: 10, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2009-12-12 14:23:51) [GET]
+  [4;36;1mHighScore Load (2.0ms)[0m   [0;1mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 153ms (View: 132, DB: 2) | 200 OK [http://localhost/Draw_Five/highscores]
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2009-12-12 14:24:48) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/Draw_Five/index]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-12 14:24:49) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 45ms (View: 9, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#savescore (for 127.0.0.1 at 2009-12-12 14:24:54) [POST]
+  Parameters: {"score"=>"", "name"=>"jon!", "commit"=>"Save Score", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Redirected to http://localhost:3000/draw_five
+Completed in 76ms (DB: 0) | 302 Found [http://localhost/Draw_Five/savescore]
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2009-12-12 14:24:54) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/draw_five]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2009-12-12 14:24:55) [GET]
+  [4;35;1mHighScore Load (1.0ms)[0m   [0mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 26ms (View: 7, DB: 1) | 200 OK [http://localhost/Draw_Five/highscores]
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2009-12-12 14:24:58) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/Draw_Five/index]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2009-12-12 14:25:01) [GET]
+  [4;36;1mHighScore Load (1.0ms)[0m   [0;1mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 28ms (View: 6, DB: 1) | 200 OK [http://localhost/Draw_Five/highscores]
+  [4;36;1mHighScore Load (2.0ms)[0m   [0;1mSELECT * FROM "high_scores" [0m
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2009-12-12 14:34:16) [GET]
+  [4;35;1mHighScore Load (1.0ms)[0m   [0mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 75ms (View: 6, DB: 1) | 200 OK [http://localhost/Draw_Five/highscores]
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2009-12-12 14:34:19) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/Draw_Five/index]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-12 14:34:21) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 111ms (View: 11, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#savescore (for 127.0.0.1 at 2009-12-12 14:34:25) [POST]
+  Parameters: {"score"=>"", "name"=>"mm", "commit"=>"Save Score", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Redirected to http://localhost:3000/draw_five/highscores
+Completed in 73ms (DB: 0) | 302 Found [http://localhost/Draw_Five/savescore]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2009-12-12 14:34:25) [GET]
+  [4;36;1mHighScore Load (1.0ms)[0m   [0;1mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 25ms (View: 7, DB: 1) | 200 OK [http://localhost/draw_five/highscores]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2009-12-12 14:34:27) [GET]
+  [4;35;1mHighScore Load (1.0ms)[0m   [0mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 27ms (View: 8, DB: 1) | 200 OK [http://localhost/Draw_Five/highscores]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2009-12-12 14:34:28) [GET]
+  [4;36;1mHighScore Load (1.0ms)[0m   [0;1mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 143ms (View: 7, DB: 1) | 200 OK [http://localhost/Draw_Five/highscores]
+  [4;35;1mHighScore Load (2.0ms)[0m   [0mSELECT * FROM "high_scores" [0m
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2009-12-12 14:35:38) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/Draw_Five/index]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-12 14:35:39) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 58ms (View: 8, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-12 14:35:41) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 58ms (View: 9, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-12 14:35:43) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 52ms (View: 9, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#savescore (for 127.0.0.1 at 2009-12-12 14:35:46) [POST]
+  Parameters: {"score"=>"", "name"=>"m", "commit"=>"Save Score", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Redirected to http://localhost:3000/draw_five/highscores
+Completed in 25ms (DB: 0) | 302 Found [http://localhost/Draw_Five/savescore]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2009-12-12 14:35:46) [GET]
+  [4;35;1mHighScore Load (2.0ms)[0m   [0mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 27ms (View: 7, DB: 2) | 200 OK [http://localhost/draw_five/highscores]
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2009-12-12 14:45:11) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/Draw_Five/index]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-12 14:48:18) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 44ms (View: 8, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#savescore (for 127.0.0.1 at 2009-12-12 14:48:21) [POST]
+  Parameters: {"score"=>"", "name"=>"m", "commit"=>"Save Score", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+
+RuntimeError (fail):
+  app/models/draw_five_game.rb:91:in `save_score'
+  app/controllers/draw_five_controller.rb:29:in `savescore'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (193.0ms)
+Rendered rescues/_request_and_response (22.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DrawFiveController#savescore (for 127.0.0.1 at 2009-12-12 14:51:26) [POST]
+  Parameters: {"score"=>"", "name"=>"m", "commit"=>"Save Score", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Redirected to http://localhost:3000/draw_five/highscores
+Completed in 24ms (DB: 0) | 302 Found [http://localhost/Draw_Five/savescore]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2009-12-12 14:51:26) [GET]
+  [4;36;1mHighScore Load (2.0ms)[0m   [0;1mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 27ms (View: 8, DB: 2) | 200 OK [http://localhost/draw_five/highscores]
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2009-12-12 14:53:13) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 72ms (View: 69, DB: 0) | 200 OK [http://localhost/Draw_Five/index]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-12 14:53:15) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 44ms (View: 8, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#savescore (for 127.0.0.1 at 2009-12-12 14:53:17) [POST]
+  Parameters: {"score"=>"", "name"=>"fdfd", "commit"=>"Save Score", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Redirected to http://localhost:3000/draw_five/highscores
+Completed in 25ms (DB: 0) | 302 Found [http://localhost/Draw_Five/savescore]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2009-12-12 14:53:17) [GET]
+  [4;35;1mHighScore Load (1.0ms)[0m   [0mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 25ms (View: 6, DB: 1) | 200 OK [http://localhost/draw_five/highscores]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-12 14:53:27) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 56ms (View: 8, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-12 14:54:20) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 59ms (View: 20, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#savescore (for 127.0.0.1 at 2009-12-12 14:56:50) [POST]
+  Parameters: {"score"=>"97", "name"=>"sdsdsd", "commit"=>"Save Score", "authenticity_token"=>"kjtUDumk0s8VT1Q4gJtlzN+DACbbzumVajc2C98/qLw="}
+  [4;36;1mHighScore Create (50.0ms)[0m   [0;1mINSERT INTO "high_scores" ("name", "score", "updated_at", "created_at") VALUES('sdsdsd', 97, '2009-12-12 19:56:50', '2009-12-12 19:56:50')[0m
+Redirected to http://localhost:3000/draw_five/highscores
+Completed in 207ms (DB: 50) | 302 Found [http://localhost/Draw_Five/savescore]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2009-12-12 14:56:51) [GET]
+  [4;35;1mHighScore Load (1.0ms)[0m   [0mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 26ms (View: 7, DB: 1) | 200 OK [http://localhost/draw_five/highscores]

@@ -1,0 +1,14 @@
+    <h2>High Scores</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+    <% @high_scores.each {|s| -%>
+        <tr>
+            <td><%=h s.name %></td>
+            <td><%=h s.score %></td>
+        </tr>
+    <% } %>
+    </table>

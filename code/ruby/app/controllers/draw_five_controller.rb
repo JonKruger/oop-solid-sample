@@ -27,6 +27,6 @@ class DrawFiveController < ApplicationController
   def savescore
     game = DrawFiveGame.new
     game.save_score(params[:name], params[:score])
-    redirect_to url_for :action => 'index'
+    redirect_to url_for :action => 'highscores'
   end
 end

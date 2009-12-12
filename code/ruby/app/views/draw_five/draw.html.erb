@@ -10,9 +10,9 @@
 <br />
 <br />
 <br />
-<% form_tag "/Draw_Five/savescore" do |f| -%>
+<% form_tag "/Draw_Five/savescore" do -%>
     Save this score:<br />
-    <%=h @score %>
-    Name: <%= f.text_field :name %>
+    <%= hidden_field_tag :score, @score %>
+    Name: <%= text_field_tag :name %>
     <%= submit_tag "Save Score" %>
 <% end %>
