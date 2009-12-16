@@ -1222,3 +1222,113 @@ Processing DrawFiveController#highscores (for 127.0.0.1 at 2009-12-12 14:56:51) 
 Rendering template within layouts/application
 Rendering draw_five/highscores
 Completed in 26ms (View: 7, DB: 1) | 200 OK [http://localhost/draw_five/highscores]
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2009-12-15 20:31:26) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 3969ms (View: 3966, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-15 20:31:32) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"Qec26TGtrZvICTQkhZkcnsIDuDVr9B2lOjlEplThOvk="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 256ms (View: 22, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-15 20:31:34) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"Qec26TGtrZvICTQkhZkcnsIDuDVr9B2lOjlEplThOvk="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 39ms (View: 7, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-15 20:31:35) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"Qec26TGtrZvICTQkhZkcnsIDuDVr9B2lOjlEplThOvk="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 41ms (View: 8, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-15 20:31:36) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"Qec26TGtrZvICTQkhZkcnsIDuDVr9B2lOjlEplThOvk="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 40ms (View: 8, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-15 20:31:37) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"Qec26TGtrZvICTQkhZkcnsIDuDVr9B2lOjlEplThOvk="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 148ms (View: 101, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-15 20:31:38) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"Qec26TGtrZvICTQkhZkcnsIDuDVr9B2lOjlEplThOvk="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 40ms (View: 8, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-15 20:31:39) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"Qec26TGtrZvICTQkhZkcnsIDuDVr9B2lOjlEplThOvk="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 54ms (View: 11, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2009-12-15 20:31:40) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"Qec26TGtrZvICTQkhZkcnsIDuDVr9B2lOjlEplThOvk="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 39ms (View: 7, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#savescore (for 127.0.0.1 at 2009-12-15 20:31:45) [POST]
+  Parameters: {"score"=>"89", "name"=>"Jon!", "commit"=>"Save Score", "authenticity_token"=>"Qec26TGtrZvICTQkhZkcnsIDuDVr9B2lOjlEplThOvk="}
+  [4;36;1mHighScore Create (1.0ms)[0m   [0;1mINSERT INTO "high_scores" ("name", "score", "updated_at", "created_at") VALUES('Jon!', 89, '2009-12-16 01:31:45', '2009-12-16 01:31:45')[0m
+Redirected to http://localhost:3000/draw_five/highscores
+Completed in 100ms (DB: 1) | 302 Found [http://localhost/Draw_Five/savescore]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2009-12-15 20:31:45) [GET]
+  [4;35;1mHighScore Load (1.0ms)[0m   [0mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 110ms (View: 93, DB: 1) | 200 OK [http://localhost/draw_five/highscores]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2009-12-15 20:31:48) [GET]
+  [4;36;1mHighScore Load (2.0ms)[0m   [0;1mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 23ms (View: 6, DB: 2) | 200 OK [http://localhost/Draw_Five/highscores]
+
+
+Processing BlackjackController#index (for 127.0.0.1 at 2009-12-15 20:31:51) [GET]
+Rendering template within layouts/application
+Rendering blackjack/index
+Completed in 22ms (View: 19, DB: 0) | 200 OK [http://localhost/Blackjack/index]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-15 20:31:52) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"Qec26TGtrZvICTQkhZkcnsIDuDVr9B2lOjlEplThOvk="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 190ms (View: 24, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-15 20:31:54) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"Qec26TGtrZvICTQkhZkcnsIDuDVr9B2lOjlEplThOvk="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 40ms (View: 5, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-15 20:31:55) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"Qec26TGtrZvICTQkhZkcnsIDuDVr9B2lOjlEplThOvk="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 38ms (View: 5, DB: 0) | 200 OK [http://localhost/blackjack/draw]
