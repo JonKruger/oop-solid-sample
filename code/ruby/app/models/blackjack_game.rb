@@ -3,7 +3,7 @@ class BlackjackGame
     "Blackjack"
   end
 
-  def draw
+  def draw 
     deck = Array.new
 
     Rank.all.each { |rank|
