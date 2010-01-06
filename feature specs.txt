@@ -21,7 +21,7 @@ When showing the high scores
 - should show the top 5 scores (name and score)
 
 When saving a high score
-- should save the name and the score
+- should save the name (entered by the user) and the score
 
 ===========================================================================
 
