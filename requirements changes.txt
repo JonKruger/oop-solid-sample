@@ -1,0 +1,13 @@
+change #1
+- Draw Five has 2 Jokers in the deck
+- jokers = 20 pts each
+- two jokers = 200 pt bonus (in addition to the 20 pts for each Joker)
+
+change #2
+???
+
+change #3
+???
+
+extra credit change
+- create an interface that will allow people to write their own scoring system as a plugin
