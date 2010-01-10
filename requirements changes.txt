@@ -10,8 +10,5 @@ change #2
    - a "run" of 5 sequential cards is worth 150 pts
    - the order of cards for "runs" is: A,2,3,4,5,6,7,8,9,10,J,Q,K,A (notice the Ace can be used at either end)
 
-change #3
-???
-
 extra credit change
 - create an interface that will allow people to write their own scoring system as a plugin
