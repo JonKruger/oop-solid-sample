@@ -1,4 +1,4 @@
-class BlackjackGame
+class BlackjackGame < GameBase
   def name
     "Blackjack"
   end

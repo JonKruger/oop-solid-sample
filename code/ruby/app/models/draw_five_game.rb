@@ -1,4 +1,4 @@
-class DrawFiveGame
+class DrawFiveGame < GameBase
   def Name
     "Draw Five"
   end

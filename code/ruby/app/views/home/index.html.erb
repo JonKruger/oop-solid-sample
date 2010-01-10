@@ -1,0 +1,15 @@
+<h2>Select a game!</h2>
+    
+<table>
+    <tr>
+        <th>Game</th>
+        <th colspan="2" align="center">High Score</th>
+    </tr>
+<% @games.each { |game| -%>
+    <tr>
+        <td><a href="<%=h game.link %>"><%=h game.name %></a></td>
+        <td><%=h game.high_score_name %></td>
+        <td><%=h game.high_score %></td>
+    </tr>
+<% } %>
+</table>
