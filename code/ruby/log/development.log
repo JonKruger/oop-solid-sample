@@ -1332,3 +1332,612 @@ Processing BlackjackController#draw (for 127.0.0.1 at 2009-12-15 20:31:55) [POST
 Rendering template within layouts/application
 Rendering blackjack/draw
 Completed in 38ms (View: 5, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+/!\ FAILSAFE /!\  Sat Jan 09 19:57:16 -0500 2010
+  Status: 500 Internal Server Error
+  unknown error
+    c:/ruby/lib/ruby/1.8/dl/import.rb:29:in `initialize'
+    c:/ruby/lib/ruby/1.8/dl/import.rb:29:in `dlopen'
+    c:/ruby/lib/ruby/1.8/dl/import.rb:29:in `dlload'
+    c:/ruby/lib/ruby/1.8/dl/import.rb:27:in `each'
+    c:/ruby/lib/ruby/1.8/dl/import.rb:27:in `dlload'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/driver/dl/api.rb:31
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:156:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:156:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/driver/dl/driver.rb:1
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:156:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:156:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/database.rb:619:in `load_driver'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/database.rb:617:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/database.rb:617:in `load_driver'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/database.rb:72:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `sqlite3_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    c:/ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Sat Jan 09 19:59:59 -0500 2010
+  Status: 500 Internal Server Error
+  unknown error
+    c:/ruby/lib/ruby/1.8/dl/import.rb:29:in `initialize'
+    c:/ruby/lib/ruby/1.8/dl/import.rb:29:in `dlopen'
+    c:/ruby/lib/ruby/1.8/dl/import.rb:29:in `dlload'
+    c:/ruby/lib/ruby/1.8/dl/import.rb:27:in `each'
+    c:/ruby/lib/ruby/1.8/dl/import.rb:27:in `dlload'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/driver/dl/api.rb:31
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:156:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:156:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/driver/dl/driver.rb:1
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:156:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:156:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/database.rb:619:in `load_driver'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/database.rb:617:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/database.rb:617:in `load_driver'
+    c:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/database.rb:72:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `sqlite3_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    c:/ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Sat Jan 09 20:03:22 -0500 2010
+  Status: 500 Internal Server Error
+  unknown error
+    C:/Ruby/lib/ruby/1.8/dl/import.rb:29:in `initialize'
+    C:/Ruby/lib/ruby/1.8/dl/import.rb:29:in `dlopen'
+    C:/Ruby/lib/ruby/1.8/dl/import.rb:29:in `dlload'
+    C:/Ruby/lib/ruby/1.8/dl/import.rb:27:in `each'
+    C:/Ruby/lib/ruby/1.8/dl/import.rb:27:in `dlload'
+    C:/Ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/driver/dl/api.rb:31
+    C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:156:in `require'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:156:in `require'
+    C:/Ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/driver/dl/driver.rb:1
+    C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:156:in `require'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:156:in `require'
+    C:/Ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/database.rb:619:in `load_driver'
+    C:/Ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/database.rb:617:in `each'
+    C:/Ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/database.rb:617:in `load_driver'
+    C:/Ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32/lib/sqlite3/database.rb:72:in `initialize'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `new'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `sqlite3_connection'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+    C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2010-01-09 20:03:56) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 2053ms (View: 2052, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2010-01-09 20:04:00) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 31ms (View: 9, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2010-01-09 20:04:02) [GET]
+  [4;36;1mHighScore Load (1.0ms)[0m   [0;1mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/Draw_Five/highscores]
+  [4;36;1mHighScore Delete all (2.0ms)[0m   [0;1mDELETE FROM "high_scores" WHERE ("id" IN ('--- :all
+')) [0m
+  [4;35;1mHighScore Load (1.0ms)[0m   [0mSELECT * FROM "high_scores" [0m
+  [4;36;1mHighScore Delete all (9.0ms)[0m   [0;1mDELETE FROM "high_scores" WHERE 1=1[0m
+  [4;35;1mHighScore Load (0.0ms)[0m   [0mSELECT * FROM "high_scores" [0m
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2010-01-09 20:05:49) [GET]
+  [4;36;1mHighScore Load (1.0ms)[0m   [0;1mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/Draw_Five/highscores]
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2010-01-09 20:05:53) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 66ms (View: 65, DB: 0) | 200 OK [http://localhost/Draw_Five/index]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2010-01-09 20:05:56) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 24ms (View: 8, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2010-01-09 20:05:59) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 21ms (View: 4, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2010-01-09 20:06:00) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 22ms (View: 4, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2010-01-09 20:06:00) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 19ms (View: 3, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2010-01-09 20:06:01) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 19ms (View: 4, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2010-01-09 20:06:01) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 20ms (View: 3, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2010-01-09 20:06:02) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 19ms (View: 4, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#savescore (for 127.0.0.1 at 2010-01-09 20:06:06) [POST]
+  Parameters: {"score"=>"80", "name"=>"Jon", "commit"=>"Save Score", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+  [4;35;1mHighScore Create (1.0ms)[0m   [0mINSERT INTO "high_scores" ("name", "score", "updated_at", "created_at") VALUES('Jon', 80, '2010-01-10 01:06:06', '2010-01-10 01:06:06')[0m
+Redirected to http://localhost:3000/draw_five/highscores
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/Draw_Five/savescore]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2010-01-09 20:06:06) [GET]
+  [4;36;1mHighScore Load (1.0ms)[0m   [0;1mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 11ms (View: 3, DB: 1) | 200 OK [http://localhost/draw_five/highscores]
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2010-01-09 20:06:08) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/Draw_Five/index]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2010-01-09 20:06:09) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 22ms (View: 4, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#savescore (for 127.0.0.1 at 2010-01-09 20:06:13) [POST]
+  Parameters: {"score"=>"97", "name"=>"Paul", "commit"=>"Save Score", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+  [4;35;1mHighScore Create (1.0ms)[0m   [0mINSERT INTO "high_scores" ("name", "score", "updated_at", "created_at") VALUES('Paul', 97, '2010-01-10 01:06:13', '2010-01-10 01:06:13')[0m
+Redirected to http://localhost:3000/draw_five/highscores
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/Draw_Five/savescore]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2010-01-09 20:06:13) [GET]
+  [4;36;1mHighScore Load (0.0ms)[0m   [0;1mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/draw_five/highscores]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2010-01-09 20:06:16) [GET]
+  [4;35;1mHighScore Load (0.0ms)[0m   [0mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/Draw_Five/highscores]
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2010-01-09 20:06:18) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/Draw_Five/index]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2010-01-09 20:06:21) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 55ms (View: 4, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#savescore (for 127.0.0.1 at 2010-01-09 20:06:25) [POST]
+  Parameters: {"score"=>"41", "name"=>"Mike", "commit"=>"Save Score", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+  [4;36;1mHighScore Create (0.0ms)[0m   [0;1mINSERT INTO "high_scores" ("name", "score", "updated_at", "created_at") VALUES('Mike', 41, '2010-01-10 01:06:25', '2010-01-10 01:06:25')[0m
+Redirected to http://localhost:3000/draw_five/highscores
+Completed in 17ms (DB: 0) | 302 Found [http://localhost/Draw_Five/savescore]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2010-01-09 20:06:25) [GET]
+  [4;35;1mHighScore Load (1.0ms)[0m   [0mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 11ms (View: 3, DB: 1) | 200 OK [http://localhost/draw_five/highscores]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2010-01-09 20:06:27) [GET]
+  [4;36;1mHighScore Load (1.0ms)[0m   [0;1mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 13ms (View: 3, DB: 1) | 200 OK [http://localhost/Draw_Five/highscores]
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2010-01-09 20:06:28) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/Draw_Five/index]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2010-01-09 20:06:29) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 19ms (View: 4, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2010-01-09 20:06:31) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 19ms (View: 4, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2010-01-09 20:06:32) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 19ms (View: 4, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2010-01-09 20:06:33) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 19ms (View: 3, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#savescore (for 127.0.0.1 at 2010-01-09 20:06:36) [POST]
+  Parameters: {"score"=>"28", "name"=>"Suzy", "commit"=>"Save Score", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+  [4;35;1mHighScore Create (1.0ms)[0m   [0mINSERT INTO "high_scores" ("name", "score", "updated_at", "created_at") VALUES('Suzy', 28, '2010-01-10 01:06:36', '2010-01-10 01:06:36')[0m
+Redirected to http://localhost:3000/draw_five/highscores
+Completed in 19ms (DB: 1) | 302 Found [http://localhost/Draw_Five/savescore]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2010-01-09 20:06:36) [GET]
+  [4;36;1mHighScore Load (0.0ms)[0m   [0;1mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/draw_five/highscores]
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2010-01-09 20:06:37) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 42ms (View: 40, DB: 0) | 200 OK [http://localhost/Draw_Five/index]
+
+
+Processing DrawFiveController#draw (for 127.0.0.1 at 2010-01-09 20:06:38) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering draw_five/draw
+Completed in 20ms (View: 4, DB: 0) | 200 OK [http://localhost/Draw_Five/draw]
+
+
+Processing DrawFiveController#savescore (for 127.0.0.1 at 2010-01-09 20:06:43) [POST]
+  Parameters: {"score"=>"43", "name"=>"Elliott", "commit"=>"Save Score", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+  [4;35;1mHighScore Create (1.0ms)[0m   [0mINSERT INTO "high_scores" ("name", "score", "updated_at", "created_at") VALUES('Elliott', 43, '2010-01-10 01:06:43', '2010-01-10 01:06:43')[0m
+Redirected to http://localhost:3000/draw_five/highscores
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/Draw_Five/savescore]
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2010-01-09 20:06:43) [GET]
+  [4;36;1mHighScore Load (1.0ms)[0m   [0;1mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 11ms (View: 3, DB: 1) | 200 OK [http://localhost/draw_five/highscores]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-09 20:06:51) [GET]
+
+ActionController::RoutingError (No route matches "/home/index" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-09 20:06:56) [GET]
+
+ActionController::RoutingError (No route matches "/home/index" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DrawFiveController#highscores (for 127.0.0.1 at 2010-01-09 20:09:40) [GET]
+  [4;35;1mHighScore Load (1.0ms)[0m   [0mSELECT * FROM "high_scores" ORDER BY score desc LIMIT 5[0m
+Rendering template within layouts/application
+Rendering draw_five/highscores
+Completed in 57ms (View: 9, DB: 1) | 200 OK [http://localhost/draw_five/highscores]
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2010-01-09 20:09:43) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/Draw_Five/index]
+
+
+Processing DrawFiveController#index (for 127.0.0.1 at 2010-01-09 20:09:46) [GET]
+Rendering template within layouts/application
+Rendering draw_five/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing BlackjackController#index (for 127.0.0.1 at 2010-01-09 20:09:48) [GET]
+Rendering template within layouts/application
+Rendering blackjack/index
+Completed in 14ms (View: 13, DB: 0) | 200 OK [http://localhost/Blackjack/index]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2010-01-09 20:09:50) [POST]
+  Parameters: {"commit"=>"Draw Cards", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 25ms (View: 8, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2010-01-09 20:09:51) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 19ms (View: 3, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2010-01-09 20:09:52) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 17ms (View: 3, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2010-01-09 20:09:52) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 19ms (View: 3, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2010-01-09 20:09:52) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 21ms (View: 3, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2010-01-09 20:09:52) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 20ms (View: 3, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2010-01-09 20:09:53) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 21ms (View: 2, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2010-01-09 20:09:53) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 17ms (View: 2, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2010-01-09 20:09:53) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 18ms (View: 3, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2010-01-09 20:09:54) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 17ms (View: 2, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2010-01-09 20:09:54) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 22ms (View: 3, DB: 0) | 200 OK [http://localhost/blackjack/draw]
+
+
+Processing BlackjackController#draw (for 127.0.0.1 at 2010-01-09 20:09:54) [POST]
+  Parameters: {"commit"=>"Draw Again", "authenticity_token"=>"l5jl5eGl8Yjpqew6nkBwOLpTMLpvRTfRRaLFMBjmO38="}
+Rendering template within layouts/application
+Rendering blackjack/draw
+Completed in 24ms (View: 2, DB: 0) | 200 OK [http://localhost/blackjack/draw]
