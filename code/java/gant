@@ -1,0 +1,4 @@
+#!/bin/sh
+export ANT_HOME=compile-lib/gant/
+export STARTER_CLASSPATH=compile-lib/gant/lib/groovy-all-1.7.0.jar
+./compile-lib/gant/bin/gant "$@"

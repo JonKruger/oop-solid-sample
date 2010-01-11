@@ -1,0 +1,79 @@
+/*************************
+ * Main Gant File
+ * Compiles all Java / Groovy code in src dir to webapp/WEB-INF/classes dir
+ ************************/
+includeTool << gant.tools.Execute
+env = { variable -> return System.getenv()[variable] }
+prop = { propKey -> return ant.project.properties[propKey] }
+log = { target -> println "\n[${target.name}] ${target.description}" }
+run = { command -> def out = ""; execute.shell(command, outProcessing:{out+=it+"\n"}); return out}
+
+appName = 'oopSolidSample'
+tcHome = env('CATALINA_HOME')
+ant.taskdef (name: 'groovyc', classname: 'org.codehaus.groovy.ant.Groovyc')
+
+jdkVersion = "1.5"
+sourceDirectories = "src"
+classesDir = "webapp/WEB-INF/classes"
+libDir = "webapp/WEB-INF/lib"
+testClassesDir = "test-gen"
+ant.path(id: 'libPath') {  
+    fileset(dir: libDir, includes: '*.jar')
+}
+compileLibDir = "compile-lib"
+ant.path(id: 'compileLibPath') {  
+    fileset(dir: compileLibDir, includes: '*.jar')
+}
+compiler = {source, destination, cpaths -> 
+	ant.groovyc(srcdir: source, destdir: destination) {
+		include(name: '**/*.groovy')
+		include(name: '**/*.java')
+		cpaths.each { classpath(refid: it) } 
+		ant.javac(source: jdkVersion, target: jdkVersion, debug: 'on')
+	}
+}
+
+target(initTomcat: 'Point tomcat to java/webapp and create override prop file.') {
+    log(it)
+    def here = new File('webapp').absolutePath
+    def filePath = tcHome+'/conf/Catalina/localhost/'+appName+'.xml'
+    new File(filePath).setText(
+        "<Context docBase=\""+here+"\"  privileged=\"false\" antiResourceLocking=\"false\" antiJARLocking=\"false\" reloadable=\"true\"/>")
+    println "   Created ${filePath} successfully."
+}
+target(compile: 'Compile everything') {
+    log(it)
+    ant.copy(todir: classesDir) { fileset(dir: sourceDirectories, includes: '*.*') }
+    compiler(sourceDirectories, classesDir, ['libPath', 'compileLibPath'])
+}
+
+target(rename: 'rename .Net project to a Java one') {
+    def repl = { fi, from, to ->
+        if (fi.file && fi.name.endsWith(from)) {
+			println "renaming $fi.name"
+			fi.renameTo(new File(fi.path.replace(from,to)))	
+    	} 
+    }
+    new File('.').eachFileRecurse {
+    	def fi = it
+    	if (fi.directory && fi.name != fi.name.toUpperCase()) {
+            def oldPath = fi.parent+"\\"+fi.name
+            def newPath = fi.parent+"\\"+fi.name[0].toLowerCase()+fi.name.substring(1)
+            if (oldPath != newPath) {
+            	println "renaming $oldPath ==> $newPath"
+		        fi.renameTo(new File(newPath))
+			}
+		}
+		else if (fi.file) {
+			repl(it, ".cs", ".java")
+    		repl(it, ".aspx", ".jsp")
+    	}
+    }
+}
+
+includeTargets << gant.targets.Clean
+cleanPattern <<  [ '**/*~' ]
+cleanDirectory << [ classesDir, testClassesDir ]
+clobberDirectory << [ tcHome+'/work/Catalina/localhost/'+appName, tcHome+'/logs' ]
+
+setDefaultTarget(compile)
