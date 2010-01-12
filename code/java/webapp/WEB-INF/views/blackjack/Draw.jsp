@@ -7,14 +7,14 @@
 	Draw
 
 
-<% Html.BeginForm<BlackjackController>(c => c.Draw()); %>
+<form action="/blackjack/draw" method="POST">
 
     <h2>Draw</h2>
     You drew the following cards:<br />
-    <b><%= Html.Encode(Model.Cards) %></b><br /><br />
-    Your score is: <b><%= Model.Score %></b><br /><br />
-    <%= this.SubmitButton("Draw Again") %>
+    <b>${model.Cards}</b><br /><br />
+    Your score is: <b>${model.Score}</b><br /><br />
+    <input id="Draw_Again" name="Draw_Again" type="submit" value="Draw Again" />
 
-<% Html.EndForm(); %>
+</form>
 
 

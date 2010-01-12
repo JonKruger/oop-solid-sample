@@ -6,25 +6,25 @@
 	Draw
 
 
-<% Html.BeginForm<DrawFiveController>(c => c.Draw()); %>
+<form action="/drawfive/draw" method="POST">
 
     <h2>Draw</h2>
     You drew the following cards:<br />
-    <b><%= Html.Encode(Model.Cards) %></b><br /><br />
-    Your score is: <b><%= Model.Score %></b><br /><br />
-    <%= this.SubmitButton("Draw Again") %>
+    <b>${model.Cards}</b><br /><br />
+    Your score is: <b>${model.Score}</b><br /><br />
+    <input id="Draw_Again" name="Draw_Again" type="submit" value="Draw Again" />
 
-<% Html.EndForm(); %>
+</form>
 <br />
 <hr />
 <br />
-<% Html.BeginForm<DrawFiveController>(c => c.SaveScore(null)); %>
+<form action="/drawfive/savescore" method="POST">
 
     Save this score:<br />
-    <%= this.Hidden(m => m.Score) %>
-    Name: <%= this.TextBox(m => m.Name) %>
-    <%= this.SubmitButton("Save Score") %>
+    <input type="hidden" name="score" value="${model.Score}" />
+    Name: <input type="text" name="Name" value="${model.Name}" />
+    <input id="Save_Score" name="Save_Score" type="submit" value="Save Score" />
 
-<% Html.EndForm(); %>
+</form>
 
 

@@ -9,10 +9,10 @@
 
     <h2>Play Draw Five!</h2>
     
-    <% Html.BeginForm<DrawFiveController>(c => c.Draw()); %>
+    <form action="/drawfive/draw" method="POST">
     
-    <%= this.SubmitButton("Draw Cards") %>
+    <input id="Draw_Again" name="Draw_Again" type="submit" value="Draw Cards" />
     
-    <% Html.EndForm(); %>
+    </form>
 
 

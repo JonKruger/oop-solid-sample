@@ -9,10 +9,10 @@
 
     <h2>Play Blackjack!</h2>
     
-    <% Html.BeginForm<BlackjackController>(c => c.Draw()); %>
+<form action="/blackjack/draw" method="POST">
     
-    <%= this.SubmitButton("Draw Cards") %>
-    
-    <% Html.EndForm(); %>
+    <input id="Draw_Cards" name="Draw_Cards" type="submit" value="Draw Cards" />
+
+</form>    
 
 

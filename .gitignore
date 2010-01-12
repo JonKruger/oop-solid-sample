@@ -6,3 +6,4 @@ ReSharper_*
 _ReSharper*
 *.suo
 ~*
+.metadata
