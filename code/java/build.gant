@@ -36,7 +36,7 @@ compiler = {source, destination, cpaths ->
 target(initTomcat: 'Point tomcat to java/webapp and create override prop file.') {
     log(it)
     def here = new File('webapp').absolutePath
-    def filePath = tcHome+'/conf/Catalina/localhost/'+appName+'.xml'
+    def filePath = tcHome+'\\conf\\Catalina\\localhost\\'+appName+'.xml'
     new File(filePath).setText(
         "<Context docBase=\""+here+"\"  privileged=\"false\" antiResourceLocking=\"false\" antiJARLocking=\"false\" reloadable=\"true\"/>")
     println "   Created ${filePath} successfully."
