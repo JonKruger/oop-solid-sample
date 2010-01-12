@@ -2,5 +2,13 @@ package oopSolidSample.models.drawFive;
 
 public class DrawFiveDrawViewModel extends DrawFiveSaveScoreUpdateModel
 {
-    public String Cards;
+    private String cards = "";
+
+	public String getCards() {
+		return cards;
+	}
+
+	public void setCards(String cards) {
+		this.cards = cards;
+	}
 }

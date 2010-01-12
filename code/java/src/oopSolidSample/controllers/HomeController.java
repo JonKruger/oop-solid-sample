@@ -1,5 +1,6 @@
 package oopSolidSample.controllers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import oopSolidSample.domain.BlackjackGame;
@@ -30,8 +31,8 @@ public class HomeController
                 gameModel.Name = "Draw Five";
 
                 DrawFiveGame game = new DrawFiveGame();
-                List<HighScore> highScores = game.GetHighScores();
-                HighScore highestScore = highScores.get(0);
+                List<HighScore> highScores = new ArrayList();//game.GetHighScores();
+                HighScore highestScore = null;// highScores.get(0);
 
                 if (highestScore != null)
                 {
