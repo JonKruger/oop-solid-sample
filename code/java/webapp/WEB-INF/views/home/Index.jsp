@@ -15,7 +15,7 @@
   
     <% for (HomeIndexViewModel.GameViewModel game : model.Games) { %>
         <tr>
-            <td><a href="<%= URLEncoder.encode(game.Link, "UTF-8") %>"><%= game.Name %></a></td>
+            <td><a href="<%= game.Link %>"><%= game.Name %></a></td>
             <td>${game.HighScoreName}</td>
             <td><%= game.HighScore %></td>
         </tr>

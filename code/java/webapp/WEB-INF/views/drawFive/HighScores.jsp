@@ -1,7 +1,6 @@
 <%@ page import="oopSolidSample.models.drawFive.*"%>
 <%@ page import="oopSolidSample.models.*"%>
-<%@page import="oopSolidSample.domain.HighScore"%>
-<%@page import="java.net.URLEncoder"%>
+<%@ page import="oopSolidSample.domain.HighScore"%>
 
     <h2>High Scores</h2>
 
@@ -10,9 +9,9 @@
             <th>Name</th>
             <th>Score</th>
         </tr>
-    <% for (HighScore highScore : HighScores) { %>    
+    <% for (HighScore highScore : model.HighScores) { %>    
         <tr>
-            <td><%= URLEncoder.encode(highScore.Name, "UTF-8") %></td>
+            <td><%= highScore.Name %></td>
             <td><%= highScore.Score %></td>
         </tr>
     <% } %>

@@ -52,7 +52,7 @@ public class DrawFiveController
     	DrawFiveHighScoresViewModel model = new DrawFiveHighScoresViewModel();
         model.HighScores = game.GetHighScores();
         ModelAndView mav = new ModelAndView("drawFive/HighScores");
-        mav.addObject(model);
+        mav.addObject("model", model);
         return mav;
     }
 
@@ -60,7 +60,7 @@ public class DrawFiveController
     public ModelAndView SaveScore(DrawFiveSaveScoreUpdateModel model)
     {
     	DrawFiveGame game = new DrawFiveGame();
-        game.SaveScore(model.Name, model.Score);
-        return new ModelAndView("drawFive/HighScores");//TODO: this.RedirectToAction(c => c.HighScores());
+        game.SaveScore(model.getName(), model.getScore());
+        return new ModelAndView("drawFive/HighScores");
     }
 }
