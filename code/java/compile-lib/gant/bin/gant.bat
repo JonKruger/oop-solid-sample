@@ -37,6 +37,9 @@ set GROOVY_HOME=%GANT_HOME%
 @rem  If ANT_HOME is not set, deduce a path -- this is needed in order to discover the location of the jars
 @rem  asscoiated with the Ant installation.
 
+REM skipping ant since it's just GANT
+set ANT_HOME=%GANT_HOME%
+
 if not "%ANT_HOME%" == "" goto endSetAntHome
    for %%P in ( %PATH% ) do if exist %%P\ant.bat set ANT_HOME=%%P\..
    if not "%ANT_HOME%" == "" goto endSetAntHome
@@ -49,7 +52,7 @@ set GROOVY_SCRIPT_NAME=gant.bat
 set STARTER_CONF=%GANT_HOME%\conf\gant-starter.conf
 set JAVA_OPTS=%JAVA_OPTS% -Dgant.home="%GANT_HOME%" -Dant.home="%ANT_HOME%"
 
-%GANT_HOME%\bin\startGroovy.bat %DIRNAME% gant.Gant %*
+"%GANT_HOME%\bin\startGroovy.bat" "%DIRNAME%" gant.Gant %*
 
 @rem End local scope for the variables with windows NT shell
 if "%OS%" == "Windows_NT" endlocal
