@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/blackjack.spr")
+@RequestMapping("/Blackjack.spr")
 public class BlackjackController
 {
 	@RequestMapping(method = RequestMethod.GET)
 	public String Index()
 	{
-		return "BlackjackDrawViewModel()";	
+		return "blackjack/Index";	
     }
 
 	@RequestMapping(method = RequestMethod.POST)
@@ -37,7 +37,7 @@ public class BlackjackController
         }
 
         model.Score = drawResult.Score;
-        ModelAndView mav = new ModelAndView();
+        ModelAndView mav = new ModelAndView("blackjack/Index");
         mav.addObject(model);
         return mav;
     }

@@ -2,9 +2,9 @@
 <%@ page import="oopSolidSample.models.*"%>
 <%@ page import="oopSolidSample.controllers.*"%>
 <%@ page import="oopSolidSample.models.*"%>
+<%@ page import="oopSolidSample.models.home.HomeIndexViewModel"%>
 
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
+<jsp:useBean id="model" scope="request" class="oopSolidSample.models.home.HomeIndexViewModel"/>
     <h2>Select a game!</h2>
     
     <table>
@@ -12,15 +12,12 @@
             <th>Game</th>
             <th colspan="2" align="center">High Score</th>
         </tr>
-        <c:forEach var="game" items="${Games}">
-            <tr>
-                                                <c:out value="${scheduledUser}"/>
-                                        </c:forEach
-    <% for (Game game : Games) { %>
+  
+    <% for (HomeIndexViewModel.GameViewModel game : model.Games) { %>
         <tr>
-            <td><a href="<%= URLEncoder.encode(game.Link, "UTF-8") %>"><%= URLEncoder.encode(game.Name, "UTF-8") %></a></td>
+            <td><a href="<%= URLEncoder.encode(game.Link, "UTF-8") %>"><%= game.Name %></a></td>
             <td>${game.HighScoreName}</td>
-            <td><%= URLEncoder.encode(game.HighScore, "UTF-8") %></td>
+            <td><%= game.HighScore %></td>
         </tr>
     <% } %>
     </table>

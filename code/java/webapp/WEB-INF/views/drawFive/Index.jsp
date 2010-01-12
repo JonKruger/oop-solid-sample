@@ -5,8 +5,6 @@
 	Index
 
 
-
-
     <h2>Play Draw Five!</h2>
     
     <form action="/drawfive/draw" method="POST">

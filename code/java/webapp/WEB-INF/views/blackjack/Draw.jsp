@@ -7,7 +7,7 @@
 	Draw
 
 
-<form action="/blackjack/draw" method="POST">
+<form action="blackjack/draw" method="POST">
 
     <h2>Draw</h2>
     You drew the following cards:<br />

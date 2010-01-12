@@ -14,13 +14,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
+@RequestMapping("/DrawFive.spr")
 public class DrawFiveController
 {
     @RequestMapping(method = RequestMethod.GET)
     public ModelAndView Index()
     {
     	DrawFiveDrawViewModel model = new DrawFiveDrawViewModel();
-        ModelAndView mav = new ModelAndView();
+        ModelAndView mav = new ModelAndView("drawFive/Index");
         mav.addObject(model);
         return mav;
     }
@@ -40,7 +41,7 @@ public class DrawFiveController
         }
 
         model.Score = drawResult.Score;
-        ModelAndView mav = new ModelAndView();
+        ModelAndView mav = new ModelAndView("drawFive/Index");
         mav.addObject(model);
         return mav;
     }
@@ -50,7 +51,7 @@ public class DrawFiveController
     	DrawFiveGame game = new DrawFiveGame();
     	DrawFiveHighScoresViewModel model = new DrawFiveHighScoresViewModel();
         model.HighScores = game.GetHighScores();
-        ModelAndView mav = new ModelAndView("drawFive/HighScores.jsp");
+        ModelAndView mav = new ModelAndView("drawFive/HighScores");
         mav.addObject(model);
         return mav;
     }
@@ -60,6 +61,6 @@ public class DrawFiveController
     {
     	DrawFiveGame game = new DrawFiveGame();
         game.SaveScore(model.Name, model.Score);
-        return new ModelAndView();//TODO: this.RedirectToAction(c => c.HighScores());
+        return new ModelAndView("drawFive/HighScores");//TODO: this.RedirectToAction(c => c.HighScores());
     }
 }

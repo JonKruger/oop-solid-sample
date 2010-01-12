@@ -1,5 +1,7 @@
 package oopSolidSample.domain;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -7,17 +9,28 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Map.Entry;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.ColumnMapRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.RowMapperResultSetExtractor;
+import org.springframework.jdbc.datasource.SingleConnectionDataSource;
 
 public class DrawFiveGame extends GameBase
 {
-	@Autowired
-	private JdbcTemplate sql;
-    
+	JdbcTemplate sql;
+	public DrawFiveGame() 
+	{
+        try {
+			Class.forName("org.sqlite.JDBC");
+	        String connectionString = "jdbc:sqlite:D:/sqllite/oopSolidSample.db3";
+	        Connection connection = DriverManager.getConnection(connectionString);
+	    	SingleConnectionDataSource ds = new SingleConnectionDataSource(connection, true);
+	    	sql = new JdbcTemplate(ds);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 	@Override
 	public String getName()
     {
@@ -124,14 +137,8 @@ public class DrawFiveGame extends GameBase
     }
     @Override
     public void SaveScore(String name, int score)
-    {
-    	/*
-    	Connection connection = null;
-        String connectionString = "jdbc:sqlite:D:/sqllite/oopSolidSample.db3";
-        Class.forName("SQLite.JDBCDriver").newInstance();
-        connection = DriverManager.getConnection(connectionString);
-    	*/
-		sql.update("insert into HighScores (Name, Score) " +
+    {        
+    	sql.update("insert into HighScores (Name, Score) " +
 				   "values ('" + name + "', '" + score + "')");
     }
 }
