@@ -1,5 +1,7 @@
 package oopSolidSample.controllers;
 
+import java.util.List;
+
 import oopSolidSample.domain.BlackjackGame;
 import oopSolidSample.domain.DrawFiveGame;
 import oopSolidSample.domain.GameBase;
@@ -28,8 +30,8 @@ public class HomeController
                 gameModel.Name = "Draw Five";
 
                 DrawFiveGame game = new DrawFiveGame();
-                //List<HighScore> highScores = game.GetHighScores();
-                HighScore highestScore = null;//highScores.get(0);
+                List<HighScore> highScores = game.GetHighScores();
+                HighScore highestScore = highScores.get(0);
 
                 if (highestScore != null)
                 {

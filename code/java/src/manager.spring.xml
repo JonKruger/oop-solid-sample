@@ -7,6 +7,4 @@
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context-2.5.xsd">
 
-    <bean name="drawFiveGame" class="oopSolidSample.domain.DrawFiveGame"/>
- 
 </beans>
