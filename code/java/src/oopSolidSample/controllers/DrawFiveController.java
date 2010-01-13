@@ -50,7 +50,7 @@ public class DrawFiveController
     {
     	DrawFiveGame game = new DrawFiveGame();
     	DrawFiveHighScoresViewModel model = new DrawFiveHighScoresViewModel();
-        model.HighScores = game.GetHighScores();
+        model.setHighScores(game.GetHighScores());
         ModelAndView mav = new ModelAndView("drawFive/HighScores");
         mav.addObject("model", model);
         return mav;

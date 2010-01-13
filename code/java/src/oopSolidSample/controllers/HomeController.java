@@ -44,6 +44,7 @@ public class HomeController
             {
                 gameModel.Name = "Blackjack";
                 gameModel.Link = "Blackjack/Index.spr";
+                gameModel.HighScoreName = "";
             }
 
             model.Games.add(gameModel);

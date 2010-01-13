@@ -6,5 +6,13 @@ import oopSolidSample.domain.HighScore;
 
 public class DrawFiveHighScoresViewModel
 {
-    public List<HighScore> HighScores;
+    public List<HighScore> highScores;
+
+	public List<HighScore> getHighScores() {
+		return highScores;
+	}
+
+	public void setHighScores(List<HighScore> highScores) {
+		this.highScores = highScores;
+	}
 }
