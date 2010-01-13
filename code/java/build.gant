@@ -36,6 +36,10 @@ compiler = {source, destination, cpaths ->
 target(initTomcat: 'Point tomcat to java/webapp and create override prop file.') {
     log(it)
     def here = new File('webapp').absolutePath
+	if (!tcHome) { 
+		println "\n You must specify a CATALINA_HOME system environment variable. \n"
+		return
+	}
     def filePath = tcHome+'\\conf\\Catalina\\localhost\\'+appName+'.xml'
     new File(filePath).setText(
         "<Context path=\"/$appName\" docBase=\""+here+"\"  privileged=\"false\" antiResourceLocking=\"false\" antiJARLocking=\"false\" reloadable=\"true\"/>")
