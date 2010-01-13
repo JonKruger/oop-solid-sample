@@ -14,10 +14,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/DrawFive.spr")
 public class DrawFiveController
 {
-    @RequestMapping(method = RequestMethod.GET)
+	@RequestMapping("/DrawFive/Index.spr")
     public ModelAndView Index()
     {
     	DrawFiveDrawViewModel model = new DrawFiveDrawViewModel();
@@ -26,7 +25,7 @@ public class DrawFiveController
         return mav;
     }
 
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping("/DrawFive/Draw.spr")
     public ModelAndView Draw()
     {
     	DrawFiveDrawViewModel model = new DrawFiveDrawViewModel();
@@ -35,32 +34,33 @@ public class DrawFiveController
         
         for(Card card : drawResult.Cards)
         {
-            if (StringUtils.hasLength(model.Cards))
-                model.Cards += ", ";
-            model.Cards += card.Description;
+            if (StringUtils.hasLength(model.getCards()))
+                model.setCards(model.getCards() + ", ");
+            model.setCards(model.getCards() + card.getDescription());
         }
 
-        model.Score = drawResult.Score;
-        ModelAndView mav = new ModelAndView("drawFive/Index");
-        mav.addObject(model);
+        model.setScore(drawResult.Score);
+        ModelAndView mav = new ModelAndView("drawFive/Draw");
+        mav.addObject("model", model);
         return mav;
     }
 
+    @RequestMapping("/DrawFive/HighScores.spr")
     public ModelAndView HighScores()
     {
     	DrawFiveGame game = new DrawFiveGame();
     	DrawFiveHighScoresViewModel model = new DrawFiveHighScoresViewModel();
-        model.HighScores = game.GetHighScores();
+        model.setHighScores(game.GetHighScores());
         ModelAndView mav = new ModelAndView("drawFive/HighScores");
-        mav.addObject(model);
+        mav.addObject("model", model);
         return mav;
     }
 
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping("/DrawFive/SaveScore.spr")
     public ModelAndView SaveScore(DrawFiveSaveScoreUpdateModel model)
     {
     	DrawFiveGame game = new DrawFiveGame();
-        game.SaveScore(model.Name, model.Score);
-        return new ModelAndView("drawFive/HighScores");//TODO: this.RedirectToAction(c => c.HighScores());
+        game.SaveScore(model.getName(), model.getScore());
+        return new ModelAndView("drawFive/SaveScore");
     }
 }

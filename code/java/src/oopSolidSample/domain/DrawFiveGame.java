@@ -22,7 +22,7 @@ public class DrawFiveGame extends GameBase
 	{
         try {
 			Class.forName("org.sqlite.JDBC");
-	        String connectionString = "jdbc:sqlite:D:/sqllite/oopSolidSample.db3";
+	        String connectionString = "jdbc:sqlite:C:\\development.sqlite3";
 	        Connection connection = DriverManager.getConnection(connectionString);
 	    	SingleConnectionDataSource ds = new SingleConnectionDataSource(connection, true);
 	    	sql = new JdbcTemplate(ds);
@@ -125,20 +125,21 @@ public class DrawFiveGame extends GameBase
     {
         List<HighScore> highScores = new ArrayList<HighScore>();
         RowMapper rowMapper = new ColumnMapRowMapper();
-        List<Map> rows = (List<Map>) sql.query("select Name, Score from HighScores order by Score desc limit 5",
+        List<Map> rows = (List<Map>) sql.query("select name, score from high_scores order by score desc limit 5",
 				new RowMapperResultSetExtractor(rowMapper));
 		for (Map row : rows)
 		{
-			String name = (String) row.get("Name");
-			int score = Integer.parseInt((String) row.get("Score"));
+			String name = (String) row.get("name");
+			Integer score = (Integer) row.get("score");
             highScores.add(new HighScore(name, score));
         }
         return highScores;
     }
+    
     @Override
     public void SaveScore(String name, int score)
     {        
-    	sql.update("insert into HighScores (Name, Score) " +
+    	sql.update("insert into high_scores (name, score) " +
 				   "values ('" + name + "', '" + score + "')");
     }
 }

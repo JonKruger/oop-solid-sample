@@ -1,0 +1,3 @@
+Java people -- follow these instructions to get set up.
+- copy ROOT.xml from this directory to (tomcat home)\conf\Catalina\localhost
+- copy development.sqlite3 from this directory to c:\

@@ -38,12 +38,13 @@ public class HomeController
                     gameModel.HighScoreName = highestScore.Name;
                     gameModel.HighScore = highestScore.Score;
                 }
-                gameModel.Link = "DrawFive.spr";
+                gameModel.Link = "DrawFive/Index.spr";
             }
             else if (gameType == BlackjackGame.class)
             {
                 gameModel.Name = "Blackjack";
-                gameModel.Link = "Blackjack.spr";
+                gameModel.Link = "Blackjack/Index.spr";
+                gameModel.HighScoreName = "";
             }
 
             model.Games.add(gameModel);
