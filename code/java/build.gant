@@ -8,7 +8,7 @@ prop = { propKey -> return ant.project.properties[propKey] }
 log = { target -> println "\n[${target.name}] ${target.description}" }
 run = { command -> def out = ""; execute.shell(command, outProcessing:{out+=it+"\n"}); return out}
 
-appName = 'oopSolidSample'
+appName = 'ROOT'
 tcHome = env('CATALINA_HOME')
 ant.taskdef (name: 'groovyc', classname: 'org.codehaus.groovy.ant.Groovyc')
 
@@ -33,9 +33,18 @@ compiler = {source, destination, cpaths ->
 	}
 }
 
+target(initDb: 'Copy SQLite DB to C:\\ drive for reference by app.') {
+    log(it)
+    ant.copy(file: "development.sqlite3", todir: "C:\\")
+}
+
 target(initTomcat: 'Point tomcat to java/webapp and create override prop file.') {
     log(it)
     def here = new File('webapp').absolutePath
+	if (!tcHome) { 
+		println "\n You must specify a CATALINA_HOME system environment variable. \n"
+		return
+	}
     def filePath = tcHome+'\\conf\\Catalina\\localhost\\'+appName+'.xml'
     new File(filePath).setText(
         "<Context path=\"/$appName\" docBase=\""+here+"\"  privileged=\"false\" antiResourceLocking=\"false\" antiJARLocking=\"false\" reloadable=\"true\"/>")

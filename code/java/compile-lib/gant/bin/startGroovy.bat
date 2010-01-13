@@ -220,7 +220,7 @@ set CP=%CLASSPATH%;%CP%
 set STARTER_MAIN_CLASS=org.codehaus.groovy.tools.GroovyStarter
 if "%STARTER_CONF%" == "" set STARTER_CONF=%GROOVY_HOME%\conf\groovy-starter.conf
 
-if "%JAVA_OPTS%" == "" set JAVA_OPTS="-Xmx128m"
+set JAVA_OPTS=%JAVA_OPTS% -Xmx256m
 set JAVA_OPTS=%JAVA_OPTS% -Dprogram.name="%PROGNAME%"
 set JAVA_OPTS=%JAVA_OPTS% -Dgroovy.home="%GROOVY_HOME%"
 if not "%TOOLS_JAR%" == "" set JAVA_OPTS=%JAVA_OPTS% -Dtools.jar="%TOOLS_JAR%"
