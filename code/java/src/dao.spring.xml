@@ -10,7 +10,7 @@
 
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource"
 		p:driverClass="org.sqlite.JDBC" 
-		p:url="jdbc:sqlite:development.db3"
+		p:url="jdbc:sqlite:C:\\development.sqlite3"
 		p:username="" p:password="" />
 
 	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate"
