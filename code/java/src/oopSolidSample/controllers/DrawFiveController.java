@@ -61,6 +61,6 @@ public class DrawFiveController
     {
     	DrawFiveGame game = new DrawFiveGame();
         game.SaveScore(model.getName(), model.getScore());
-        return new ModelAndView("drawFive/HighScores");
+        return new ModelAndView("drawFive/SaveScore");
     }
 }
